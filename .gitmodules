@@ -1,0 +1,84 @@
+[submodule "mni_perllib-0.09"]
+	path = SRC/mni_perllib-0.09
+	url = git@github.com:sandywang/mni-perllib.git
+[submodule "cortex_area-1.3.0"]
+	path = SRC/cortex_area-1.3.0
+	url = git@github.com:aces/cortex_area.git
+[submodule "cortical_surface-1.2.2"]
+	path = SRC/cortical_surface-1.2.2
+	url = git@github.com:aces/cortical_surface.git
+[submodule "mni-models_icbm152-nl-1.1"]
+	path = SRC/mni-models_icbm152-nl-1.1
+	url = git@github.com:aces/mni-models_icbm152-nl.git
+[submodule "ILT-1.2.4"]
+	path = SRC/ILT-1.2.4
+	url = git@github.com:sandywang/ILT.git
+[submodule "pve-1.4.3"]
+	path = SRC/pve-1.4.3
+	url = git@github.com:aces/pve.git
+[submodule "laplacian_thickness-1.3.0"]
+	path = SRC/laplacian_thickness-1.3.0
+	url = git@github.com:aces/laplacian_thickness.git
+[submodule "surface-extraction-3.0.3"]
+	path = SRC/surface-extraction-3.0.3
+	url = git@github.com:aces/surface-extraction.git
+[submodule "PMP-0.8.2"]
+	path = SRC/PMP-0.8.2
+	url = git@github.com:sandywang/PMP.git
+[submodule "bicpl-1.4.7"]
+	path = SRC/bicpl-1.4.7
+	url = git@github.com:sandywang/bicpl.git
+[submodule "arguments-0.2.1"]
+	path = SRC/arguments-0.2.1
+	url = git@github.com:sandywang/arguments.git
+[submodule "inormalize-1.0.3"]
+	path = SRC/inormalize-1.0.3
+	url = git@github.com:sandywang/inormalize.git
+[submodule "classify-1.1.1"]
+	path = SRC/classify-1.1.1
+	url = git@github.com:sandywang/classify.git
+[submodule "mni-models_adni_nl-1.2"]
+	path = SRC/mni-models_adni_nl-1.2
+	url = git@github.com:aces/mni-models_adni_nl.git
+[submodule "ebtks-1.6.5"]
+	path = SRC/ebtks-1.6.5
+	url = git@github.com:sandywang/EBTKS.git
+[submodule "minc-2.1.02"]
+	path = SRC/minc-2.1.02
+	url = git@github.com:sandywang/minc.git
+[submodule "mni-models_icbm152-nl-2009-1.1"]
+	path = SRC/mni-models_icbm152-nl-2009-1.1
+	url = git@github.com:aces/mni-models_icbm152-nl-2009.git
+[submodule "conglomerate-1.6.8"]
+	path = SRC/conglomerate-1.6.8
+	url = git@github.com:sandywang/conglomerate.git
+[submodule "mni_autoreg-0.99.7"]
+	path = SRC/mni_autoreg-0.99.7
+	url = git@github.com:sandywang/mni_autoreg.git
+[submodule "oobicpl-0.4.9"]
+	path = SRC/oobicpl-0.4.9
+	url = git@github.com:sandywang/oobicpl.git
+[submodule "civet-2.1.0"]
+	path = SRC/civet-2.1.0
+	url = git@github.com:aces/CIVET.git
+[submodule "N3-1.12.1"]
+	path = SRC/N3-1.12.1
+	url = git@github.com:sandywang/N3.git
+[submodule "mni-models_colin27-lin-1.2"]
+	path = SRC/mni-models_colin27-lin-1.2
+	url = git@github.com:aces/mni-models_colin27-lin.git
+[submodule "mni_surfreg-0.6.4"]
+	path = SRC/mni_surfreg-0.6.4
+	url = git@github.com:aces/mni_surfreg.git
+[submodule "mincbet-1.3.7"]
+	path = SRC/mincbet-1.3.7
+	url = git@github.com:aces/mincbet.git
+[submodule "mni-models_average305-lin-1.1"]
+	path = SRC/mni-models_average305-lin-1.1
+	url = git@github.com:aces/mni-models_average305-lin.git
+[submodule "mni-templates-1.0"]
+	path = SRC/mni-templates-1.0
+	url = git@github.com:aces/mni-templates.git
+[submodule "ray_trace-1.0.4"]
+	path = SRC/ray_trace-1.0.4
+	url = git@github.com:sandywang/ray_trace.git
