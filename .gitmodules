@@ -82,3 +82,6 @@
 [submodule "ray_trace-1.0.4"]
 	path = SRC/ray_trace-1.0.4
 	url = git@github.com:sandywang/ray_trace.git
+[submodule "mni-models_icbm152-lin-1.1"]
+	path = SRC/mni-models_icbm152-lin-1.1
+	url = git@github.com:aces/mni-models_icbm152-lin.git
