@@ -85,3 +85,6 @@
 [submodule "mni-models_icbm152-lin-1.1"]
 	path = SRC/mni-models_icbm152-lin-1.1
 	url = git@github.com:aces/mni-models_icbm152-lin.git
+[submodule "m4-1.0"]
+	path = SRC/m4-1.0
+	url = git@github.com:aces/m4.git
