@@ -88,3 +88,6 @@
 [submodule "m4-1.0"]
 	path = SRC/m4-1.0
 	url = git@github.com:aces/m4.git
+[submodule "Getopt-Tabular-0.3"]
+	path = SRC/Getopt-Tabular-0.3
+	url = git@github.com:aces/Getopt-Tabular.git
