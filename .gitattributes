@@ -1,3 +1,4 @@
 *.tar.gz filter=lfs diff=lfs merge=lfs -text
 *.mnc filter=lfs diff=lfs merge=lfs -text
 *.mnc.gz filter=lfs diff=lfs merge=lfs -text
+*.tgz filter=lfs diff=lfs merge=lfs -text
