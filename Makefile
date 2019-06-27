@@ -181,7 +181,7 @@ source_packages:
 	  mv -f ${SOURCE_DIR}/${PVE_PACKAGE}/${PVE_PACKAGE}.tar.gz dist/TGZ/ ; \
 	fi
 	cd ${SOURCE_DIR}/ ; \
-	tar cvf ${M4_PACKAGE}.tar m4 ; \
+	tar --exclude='*/.git' --exclude='*/CVS' -cvf ${M4_PACKAGE}.tar m4 ; \
 	gzip ${M4_PACKAGE}.tar ; \
 	cd - ; \
 	mv -f ${SOURCE_DIR}/${M4_PACKAGE}.tar.gz dist/TGZ/
@@ -436,19 +436,19 @@ BICINVENTOR_GIT_TAG=
 BICINVENTOR_CVS=libraries/bicInventor
 BICINVENTOR_CVS_TAG=bicinventor_0-3-1
 
-BOOST_VERS=_1_48_0
+BOOST_VERS=_1_64_0
 BOOST_PACKAGE=boost${BOOST_VERS}
 BOOST_GIT=
 BOOST_GIT_TAG=
 BOOST_CVS=
 BOOST_CVS_TAG=
 
-BICPL_VERS=-1.4.7
+BICPL_VERS=-1.4.8
 BICPL_PACKAGE=bicpl${BICPL_VERS}
 BICPL_GIT=git@github.com:aces/bicpl.git
-BICPL_GIT_TAG=bicpl-1_4_7
+BICPL_GIT_TAG=bicpl-1_4_8
 BICPL_CVS=libraries/bicpl
-BICPL_CVS_TAG=bicpl-1_4_7
+BICPL_CVS_TAG=bicpl-1_4_8
 
 BRAINVIEW_VERS=-0.8.2
 BRAINVIEW_PACKAGE=brain-view${BRAINVIEW_VERS}
@@ -471,12 +471,12 @@ CGAL_GIT_TAG=
 CGAL_CVS=
 CGAL_CVS_TAG=
 
-CIVET_VERS=-2.1.0
+CIVET_VERS=-2.1.1
 CIVET_PACKAGE=civet${CIVET_VERS}
 CIVET_GIT=git@github.com:aces/CIVET.git
-CIVET_GIT_TAG=CIVET_2_1_0
+CIVET_GIT_TAG=CIVET_2_1_1
 CIVET_CVS=pipelines/CIVET
-CIVET_CVS_TAG=CIVET_2_1_0
+CIVET_CVS_TAG=CIVET_2_1_1
 
 CLASP_VERS=-3.0.3
 ifeq ($(CLASP_VERS),-2.1)
@@ -511,12 +511,12 @@ COLIN27_GIT_TAG=colin27-lin-1-2
 COLIN27_CVS=mni-models/colin27-lin
 COLIN27_CVS_TAG=colin27-lin-1-2
 
-CONGLOMERATE_VERS=-1.6.8
+CONGLOMERATE_VERS=-1.6.9
 CONGLOMERATE_PACKAGE=conglomerate${CONGLOMERATE_VERS}
 CONGLOMERATE_GIT=git@github.com:aces/conglomerate.git
-CONGLOMERATE_GIT_TAG=release-1.6.80
+CONGLOMERATE_GIT_TAG=conglomerate_1-6-9
 CONGLOMERATE_CVS=libraries/conglomerate
-CONGLOMERATE_CVS_TAG=conglomerate_1-6-8
+CONGLOMERATE_CVS_TAG=conglomerate_1-6-9
 
 CSURFACE_VERS=-1.2.2
 CSURFACE_PACKAGE=cortical_surface${CSURFACE_VERS}
@@ -532,16 +532,16 @@ DISPLAY_GIT_TAG=
 DISPLAY_CVS=
 DISPLAY_CVS_TAG=
 
-EBTKS_VERS=-1.6.5
+EBTKS_VERS=-1.6.6
 ifeq ($(EBTKS_VERS),-1.4)
   EBTKS_PACKAGE=EBTKS${EBTKS_VERS}
 else
   EBTKS_PACKAGE=ebtks${EBTKS_VERS}
 endif
 EBTKS_GIT=git@github.com:aces/EBTKS.git
-EBTKS_GIT_TAG=release-1.6.50
+EBTKS_GIT_TAG=ebtks-1_6_6
 EBTKS_CVS=libraries/EBTKS
-EBTKS_CVS_TAG=ebtks-1-6-5
+EBTKS_CVS_TAG=ebtks-1-6-6
 
 EMMA_VERS=-1.0.0
 EMMA_PACKAGE=emma${EMMA_VERS}
@@ -557,10 +557,8 @@ GETOPT_GIT_TAG=getopt_0-3
 GETOPT_CVS=libraries/Getopt-Tabular
 GETOPT_CVS_TAG=getopt_0-3
 
-GGS_VERS=-8.71.1
-# GGS_VERS=-9.22
-GGS_PACKAGE=gnu-ghostscript${GGS_VERS}
-## GGS_PACKAGE=ghostscript${GGS_VERS}  #### this one for version 9.22
+GGS_VERS=-9.22
+GGS_PACKAGE=ghostscript${GGS_VERS}
 GGS_GIT=
 GGS_GIT_TAG=
 GGS_CVS=
@@ -615,12 +613,12 @@ ICBMTEMP_GIT_TAG=mni_templates_1-0
 ICBMTEMP_CVS=mni-models/mni-templates
 ICBMTEMP_CVS_TAG=mni_templates_1-0
 
-ILT_VERS=-1.2.4
+ILT_VERS=-1.2.5
 ILT_PACKAGE=ILT${ILT_VERS}
 ILT_GIT=git@github.com:aces/ILT.git
-ILT_GIT_TAG=ILT-1_2_4
+ILT_GIT_TAG=ILT-1_2_5
 ILT_CVS=libraries/ILT
-ILT_CVS_TAG=ILT-1_2_4
+ILT_CVS_TAG=ILT-1_2_5
 
 IMAGEMAGICK_VERS=-7.0.1-8
 IMAGEMAGICK_PACKAGE=ImageMagick${IMAGEMAGICK_VERS}
@@ -629,12 +627,12 @@ IMAGEMAGICK_GIT_TAG=
 IMAGEMAGICK_CVS=
 IMAGEMAGICK_CVS_TAG=
 
-INORM_VERS=-1.0.3
+INORM_VERS=-1.0.4
 INORM_PACKAGE=inormalize${INORM_VERS}
 INORM_GIT=git@github.com:aces/inormalize.git
-INORM_GIT_TAG=inormalize_1-0-3
+INORM_GIT_TAG=inormalize_1-0-4
 INORM_CVS=INSECT/inormalize
-INORM_CVS_TAG=inormalize_1-0-3
+INORM_CVS_TAG=inormalize_1-0-4
 
 LOBESEG_VERS=-1.1
 LOBESEG_PACKAGE=mni_lobe_segment${LOBESEG_VERS}
@@ -671,12 +669,12 @@ MRISIM_GIT_TAG=
 MRISIM_CVS=simulation/mrisim
 MRISIM_CVS_TAG=mrisim-1-0-3
 
-N3_VERS=-1.12.1
+N3_VERS=-1.12.3
 N3_PACKAGE=N3${N3_VERS}
 N3_GIT=git@github.com:aces/N3.git
-N3_GIT_TAG=release-1.12.10
+N3_GIT_TAG=N3-1_12_3
 N3_CVS=INSECT/N3
-N3_CVS_TAG=N3-1_12_1
+N3_CVS_TAG=N3-1_12_3
 
 NETCDF_VERS=-3.6.1
 NETCDF_PACKAGE=netcdf${NETCDF_VERS}
@@ -720,12 +718,12 @@ PERLLIB_GIT_TAG=mni_perllib_v0_09
 PERLLIB_CVS=libraries/mni-perllib
 PERLLIB_CVS_TAG=mni_perllib_v0_09
 
-PMP_VERS=-0.8.2
+PMP_VERS=-0.8.3
 PMP_PACKAGE=PMP${PMP_VERS}
 PMP_GIT=git@github.com:aces/PMP.git
-PMP_GIT_TAG=ver-0-8-2
+PMP_GIT_TAG=ver-0-8-3
 PMP_CVS=libraries/PMP
-PMP_CVS_TAG=ver-0-8-2
+PMP_CVS_TAG=ver-0-8-3
 
 PVE_VERS=-1.4.3
 PVE_PACKAGE=pve${PVE_VERS}
@@ -1109,7 +1107,7 @@ $(CIVET):        $(CIVET_UNTAR)    $(GETOPT)    $(PMP)  $(ADNI)
 	 ./autogen.sh ; \
 	fi ; \
 	if [ ! -e Makefile ] ; then \
-	 ./configure --prefix=$(PREFIX_PATH) PERL=${PERL} ; \
+	 ./configure --prefix=$(PREFIX_PATH) PERL=${PERL} --enable-animal=$(ANIMAL); \
 	fi ; \
 	${MAKE}; ${MAKE} install ; \
 	cd $(PREFIX_PATH)/CIVET$(CIVET_VERS)/models ; \

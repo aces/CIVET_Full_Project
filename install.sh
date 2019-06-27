@@ -93,7 +93,7 @@ cp -p $PWD/install.sh $INSTALL_DIR/building/
 
 echo "#!/bin/sh -f" > job_test
 echo "source $INSTALL_DIR/init.sh" >> job_test
-echo "$INSTALL_DIR/CIVET-2.1.0/CIVET_Processing_Pipeline -prefix mni_icbm -sourcedir `pwd`/Test -targetdir `pwd`/Test -N3-distance 200 -lsq12 -resample-surfaces -thickness tlaplace:tfs:tlink 30:20 -VBM -combine-surface -spawn -run 00100" >> job_test
+echo "$INSTALL_DIR/CIVET-2.1.1/CIVET_Processing_Pipeline -prefix mni_icbm -sourcedir `pwd`/Test -targetdir `pwd`/Test -N3-distance 200 -lsq12 -resample-surfaces -thickness tlaplace:tfs:tlink 30:20 -VBM -combine-surface -spawn -run 00100" >> job_test
 chmod u+x job_test
 
 echo "Submit file job_test to run the test case"
