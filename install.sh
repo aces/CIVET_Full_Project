@@ -9,7 +9,7 @@ umask 077
 INSTALL_DIR=$PWD/`uname`-`uname -m`
 mkdir -p ${PWD}/bin
 
-ANIMAL=yes
+ANIMAL=no
 MRISIM=no
 MAGICK=no
 GIT=yes
