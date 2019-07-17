@@ -81,7 +81,13 @@ After you select the proper version (e.g. CIVET-2.1.1), you can down CIVET Insta
 ```
 git lfs clone --branch CIVET_2_1_1 git@github.com:aces/CIVET_Full_Project.git
 ```
+
 **Note**: Please **DO NOT** download the ZIP file of 'CIVET_Full_Project'! It would not download all external packages which are uploaded using LFS format.
+
+If you have downloaded master branch of CIVET_Full_Project before, you need checkout to specific tag
+```
+git checkout CIVET_2_1_1
+```
 
 ## Building CIVET on Your Machine
 
@@ -129,15 +135,20 @@ make PREFIX_PATH=$INSTALL_DIR ANIMAL=$ANIMAL MRI_SIM=$MRISIM \
 #### 3 - Set Default Terminal to Bash
 Please check whether your default terminal is bash, run
 ```bash
-echo $SHELL
+ls -lh /bin/sh
 ```
 
 The **stdout** should be 
-```
-/bin/bash
+```bash
+lrwxrwxrwx 1 root root * *** **  **** /bin/sh -> /bin/bash
 ```
 
-If not, you can use **chsh** or change softlink of /bin/sh to change it.
+If not, you have to change it to bash (DO NOT USE dash!). 
+Use **chsh** or **ln** softlink of /bin/sh to change it.
+
+```bash
+ln -s /bin/bash /bin/sh
+```
 
 #### 4 - Build Your CIVET
 Simply run 
@@ -148,6 +159,122 @@ Simply run
 * You will be first prompted to enter values for the compilation of netpbm.
 Choose the static build. Accept defaults for the z-library. Choose
 "none" for all graphics support libraries (png, jpg, X11, svga, etc).
+```
+**************************************************************
+* You are about to configure netpbm for the CIVET quarantine *
+* Choose all defaults options except libraries=static,       *
+* Svgalib=none and X11=none.                                 *
+**************************************************************
+
+This is the Netpbm configurator.  It is an interactive dialog that
+helps you build the file 'Makefile.config' and prepare to build Netpbm.
+
+Do not be put off by all the questions.  Configure gives you the 
+opportunity to make a lot of choices, but you don't have to.  If 
+you don't have reason to believe you're smarter than Configure,
+just take the defaults (hit ENTER) and don't sweat it.
+
+If you are considering having a program feed answers to the questions
+below, please read doc/INSTALL, because that's probably the wrong thing to do.
+
+Hit ENTER to begin.
+```
+
+Type *gnu* if you use Linux
+```
+Which of the following best describes your platform?
+gnu      GNU/Linux
+sun      Solaris or SunOS
+hp       HP-UX
+aix      AIX
+win      Windows/DOS (Cygwin, DJGPP, Mingw32)
+tru64    Tru64
+irix     Irix
+bsd      NetBSD, BSD/OS
+openbsd  OpenBSD
+freebsd  FreeBSD
+darwin   Darwin or Mac OS X
+amigaos  Amiga
+unixware Unixware
+sco      SCO OpenServer
+beos     BeOS
+none     none of these are even close
+
+Platform [gnu] ==> gnu
+```
+
+Type *regular*
+```
+Do you want a regular build or a merge build?
+If you don't know what this means, take the default or see doc/INSTALL
+
+regular or merge [regular] ==> regular
+```
+
+Type *static*
+```
+Do you want libnetpbm to be statically linked or shared?
+
+static or shared [shared] ==> static
+```
+
+ENTER for default option
+```
+What header file defines uint32_t, etc.?
+
+(Doing test compiles to choose a default for you -- ignore errors)
+Doing test compile: cc -c -o /tmp/netpbm0.o  /tmp/netpbm0.c
+
+'#include' argument or NONE [<inttypes.h>] ==> 
+```
+
+Type *none* for libjepg
+```
+What is your JPEG (graphics format) library?
+library filename or 'none' [libjpeg.so] ==> none
+```
+
+Type *none* for libtiff.so
+```
+What is your TIFF (graphics format) library?
+library filename or 'none' [libtiff.so] ==> none
+```
+
+Type *libz.so*
+```
+What is your Z (compression) library?
+library filename or 'none' [libz.so] ==> libz.so
+```
+
+ENTER for default option
+```
+What is your Z (compression) library?
+library filename or 'none' [libz.so] ==> libz.so
+Where are the interface headers for it?
+Z header directory [default] ==> 
+```
+
+Type *none* for libX11.so
+```
+What is your X11 (X client) library?
+library filename or 'none' [libX11.so] ==> none
+```
+
+Type *none* for Svgalib
+```
+What is your Svgalib library?
+library filename or 'none' [none] ==> none
+```
+
+ENTER for default option
+```
+What URL will you use for the main Netpbm documentation page?
+This information does not get built into any programs or libraries.
+It does not make anything actually install that web page.
+It is just for including in legacy man pages.
+
+Documentation URL [http://netpbm.sourceforge.net/doc/] ==> 
+```
 
 * At the end of compilation, you should have 396 files in the
 Linux-x86_64/bin directory (for CIVET-2.1.1).
