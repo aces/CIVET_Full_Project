@@ -95,7 +95,7 @@ git checkout CIVET_2_1_1
 Before compiling, make sure that the necessary system requirements are satisfied:
 * Ubuntu/Debian:
 ```bash
-sudo apt-get install build-essential
+sudo apt-get install build-essential automake libtool bison
 sudo apt-get install libz-dev libjpeg-dev libpng-dev libtiff-dev \
     liblcms2-dev flex libx11-dev freeglut3-dev \
     libxmu-dev libxi-dev libqt4-dev imagemagick gnuplot
