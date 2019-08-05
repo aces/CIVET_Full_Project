@@ -89,6 +89,8 @@ If you have downloaded master branch of CIVET_Full_Project before, you need chec
 git checkout CIVET_2_1_1
 ```
 
+#### 5 - Make sure you have enough free disk space for compiling (at least 8.1GB)
+
 ## Building CIVET on Your Machine
 
 #### 1 - Check Building Requirements
