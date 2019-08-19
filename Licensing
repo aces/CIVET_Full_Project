@@ -1,0 +1,264 @@
+CIVET release (July 2019)
+Licensing information
+------
+Civet core
+
+Civet, Release 1.0 (c) 2019, see table below for list of copyright 
+holders (the "Software").
+
+The Software remains the property of the copyright holders.
+
+The Software is distributed "AS IS" under this Licence solely for 
+non-commercial use in the hope that it will be useful, but the 
+copyright holders make clear that no condition is made or to be implied,
+nor is any warranty given or to be implied, as to the accuracy of the 
+Software, or that it will be suitable for any particular purpose or for 
+use under any specific conditions. Furthermore, the copyright holders 
+disclaim all responsibility for the use which is made of the Software. 
+They further disclaim any liability for the outcomes arising from using
+the Software.
+
+The Licensee agrees to indemnify the copyright holders and hold the
+Copyright holders harmless from and against any and all claims, damages 
+and liabilities asserted by third parties (including claims for 
+negligence) which arise directly or indirectly from the use of the
+Software or the sale of any products based on the Software.
+
+No part of the Software may be reproduced, modified, transmitted or 
+transferred in any form or by any means, electronic or mechanical,
+without the express permission of the copyright holders. Permission is 
+not required if the said reproduction, modification, transmission or 
+transference is done without financial return, the conditions of this 
+Licence are imposed upon the receiver of the product, and all original 
+and amended source code is included in any transmitted product. You may
+be held legally responsible for any copyright infringement that is 
+caused or encouraged by your failure to abide by these terms and 
+conditions.
+
+You are not permitted under this Licence to use this Software 
+commercially. Use for which any financial return is received shall be 
+defined as commercial use, and includes (1) integration of all or part 
+of the source code or the Software into a product for sale or license 
+by or on behalf of Licensee to third parties or (2) use of the Software 
+or any derivative of it for research with the final aim of developing 
+software products for sale or license to a third party or (3) use of 
+the Software or any derivative of it for research with the final aim of
+ developing non-software products for sale or license to a third party, 
+or (4) use of the Software to provide any service to an external 
+organisation for which payment is received. If you are interested in 
+using the Software commercially, please contact Alan C. Evans to 
+negotiate a licence. Contact details are: alan.evans@mcgill.ca
+
+
+Software components		Copyright	
+civet                   Alan C. Evans	
+arguments               Alan C. Evans, Jonathan Harlap	
+bicpl                   Alan C. Evans, David MacDonald	
+classify                Alan C. Evans, Vasken Kollokian	
+conglomerate            Alan C. Evans, David MacDonald	
+cortex_area             Alan C. Evans	
+cortical_surface        Alan C. Evans	
+ebtks                   Alan C. Evans, Alex Zijdenbos	
+Getopt-Tabular          Alan C. Evans, Greg Ward	
+ILT                     Alan C. Evans, David MacDonald	
+inormalize              Alan C. Evans, Alex Zijdenbos
+minc                    Alan C. Evans, Peter Neelin, Dave MacDonald	
+mni_autoreg             Alan C. Evans, Louis Collins, Greg Ward	
+mni_m4                  Alan C. Evans, Jason Lerch
+mni_perllib             Alan C. Evans, Greg Ward
+N3                      Alan C. Evans, John Sled
+PMP                     Alan C. Evans, Jason Lerch
+pve                     Alan C. Evans
+ray_trace               Alan C. Evans, David MacDonald, Jason Lerch
+surface-extraction      Alan C. Evans	
+
+
+Other packages included in the release:
+
+The aggregate Civet release includes the following packages: mincbet 
+(copyright: Alan C. Evans) & mni_surfreg (copyright: Alan C. Evans), 
+which are released under the terms of the GPLv2.0 licence 
+(http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), and oobicpl 
+(copyright: Alan C. Evans, Jason Lerch, Steve Robbins) and 
+laplacian_thickness (copyright: Alan C. Evans) which are released under
+the LGPLv2.1 licence 
+(https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html).
+
+The aggregate Civet release also includes the following external 
+packages, which are available under different licences: Netcdf (v3.6.1),
+Hdf5 (v1.8.8), Netpbm (v10.35.94), PCRE (v7.8), Boost (v1.64.0), 
+PCRE++ (v0.9.5), CGAL (v3.3.1), GSL (v1.8), and data models. 
+Licences for each package are indicated with the release (INCLUDE COPY 
+OF FULL LICENCE FOR EACH) and a summary of the licensing information is
+provided below:
+
+Netcdf, Hdf5, Netpbm, PCRE, Boost, Data models
+Licences vary a little in their wording (see full licenses for each 
+package with the release), but provide the following re-use permissions
+(and see sections below the license for copyright and disclaimers for 
+each):
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions are 
+met:
+1. Redistributions of source code must retain the following copyright 
+  notices, this list of conditions and the following disclaimers.
+2. Redistributions in binary form must reproduce the following copyright
+  notices, this list of conditions and the following disclaimers in the 
+  documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its 
+  contributors may be used to endorse or promote products derived from 
+  this software without specific prior written permission.
+  (for Boost: unless such copies or derivative works are solely in the 
+  form of machine-executable object code generated by a source language 
+  processor.)
+--------------------
+Netcdf
+Copyright 2018 Unidata
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+--------------------
+Hdf5
+HDF5 (Hierarchical Data Format 5) Software Library and Utilities
+Copyright (c) 2006-2018, The HDF Group. 
+
+NCSA HDF5 (Hierarchical Data Format 5) Software Library and Utilities
+Copyright (c) 1998-2006, The Board of Trustees of the University of 
+Illinois. 
+
+All rights reserved.
+
+DISCLAIMER: 
+THIS SOFTWARE IS PROVIDED BY THE HDF GROUP AND THE CONTRIBUTORS "AS IS" 
+WITH NO WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED. IN NO EVENT 
+SHALL THE HDF GROUP OR THE CONTRIBUTORS BE LIABLE FOR ANY DAMAGES 
+SUFFERED BY THE USERS ARISING OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+You are under no obligation whatsoever to provide any bug fixes, patches, 
+or upgrades to the features, functionality or performance of the source 
+code ("Enhancements") to anyone; however, if you choose to make your 
+Enhancements available either publicly, or directly to The HDF Group, 
+without imposing a separate written license agreement for such 
+Enhancements, then you hereby grant the following license: a 
+non-exclusive, royalty-free perpetual license to install, use, modify, 
+prepare derivative works, incorporate into other computer software, 
+distribute, and sublicense such enhancements or derivative works 
+thereof, in binary and source code form.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Netpbm
+
+Link to copyright summary & disclaimers:
+http://netpbm.svn.code.sourceforge.net/p/netpbm/code/trunk/doc/copyright_summary 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PCRE
+
+PCRE is a library of functions to support regular expressions whose 
+syntax and semantics are as close as possible to those of the Perl 5 
+language.
+
+The basic library functions are written in C and are freestanding. Also
+included in the distribution is a set of C++ wrapper functions.
+
+
+THE BASIC LIBRARY FUNCTIONS
+---------------------------
+
+Written by:       Philip Hazel
+Email local part: ph10
+Email domain:     cam.ac.uk
+
+University of Cambridge Computing Service,
+Cambridge, England.
+
+Copyright (c) 1997-2008 University of Cambridge
+All rights reserved.
+
+
+THE C++ WRAPPER FUNCTIONS
+-------------------------
+
+Contributed by:   Google Inc.
+
+Copyright (c) 2007-2008, Google Inc.
+All rights reserved.
+
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS 
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED 
+TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER 
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Boost
+
+Boost Software License - Version 1.0 - August 17th, 2003
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND 
+NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE 
+DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, 
+WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Data models
+
+Copyright (C) 1993-2009 Louis Collins, McConnell Brain Imaging Centre, 
+Montreal Neurological Institute, McGill University.
+
+The authors and McGill University make no representations about the 
+suitability of this software for any purpose.  It is provided "as is" 
+without express or implied warranty.  The authors are not responsible 
+for any data loss, equipment damage, property loss, or injury to 
+subjects or patients resulting from the use or misuse of this software 
+package.
+
+If the ADNI model is used, cite:
+Fonov, V., Coupe, P., Eskildsen, S., Collins, L., and The Alzheimers's 
+Disease Neuroimaging Initiative (2011). Atrophy specific MRI brain
+template for Alzheimer's disease and Mild Cognitive Impairment.
+Alzheimer's Association International Conference, July 2011, France. 7 
+(4), pp. S58, 2011. 
+https://hal.archives-ouvertes.fr/hal-00645521 
+https://drive.google.com/file/d/0B2WB9sZf0qcZTzUxZDU1QWRJRVE/view 
+
+
+Other external packages: PCRE++, CGAL, GSL
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PCRE++
+
+GNU LGPLv2.1 licence 
+(https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CGAL
+
+See https://www.cgal.org/license.html (QPL/GPL/LGPL)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+GSL
+
+GNU GPLv2.0 licence 
+(http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
