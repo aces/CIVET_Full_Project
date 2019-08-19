@@ -65,6 +65,7 @@ packages:
 	@cp -f -p Makefile dist/
 	@cp -f -p mk_environment.pl dist/
 	@cp -f -p install.sh dist/
+	@cp -f -p License dist/
 	@cp -f -p $(ADNI_TAR) dist/TGZ/
 	@cp -f -p $(ARGS_TAR) dist/TGZ/
 	@cp -f -p $(AUTOREG_TAR) dist/TGZ/
@@ -138,6 +139,7 @@ source_packages:
 	@cp -f -p Makefile dist/
 	@cp -f -p mk_environment.pl dist/
 	@cp -f -p install.sh dist/
+	@cp -f -p License dist/
 	for pkg in      ${ADNI_PACKAGE} \
 			${ARGS_PACKAGE} \
 			${AUTOREG_PACKAGE} \
@@ -215,7 +217,8 @@ binaries:
 	        $(UNAME)/CIVET$(CIVET_VERS) $(UNAME)/doc \
 	        $(UNAME)/etc $(UNAME)/lib $(UNAME)/perl \
 	        $(UNAME)/init.* $(UNAME)/share \
-	        job_test Test/mni_icbm_00100_t1.mnc
+	        job_test Test/mni_icbm_00100_t1.mnc \
+	        License
 	gzip civet$(CIVET_VERS)-binaries.tar
 	@echo 
 	@echo "...done"
