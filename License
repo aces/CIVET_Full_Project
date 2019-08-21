@@ -88,9 +88,8 @@ The aggregate Civet release also includes the following external
 packages, which are available under different licences: Netcdf (v3.6.1),
 Hdf5 (v1.8.8), Netpbm (v10.35.94), PCRE (v7.8), Boost (v1.64.0), 
 PCRE++ (v0.9.5), CGAL (v3.3.1), GSL (v1.8), and data models. 
-Licences for each package are indicated with the release (INCLUDE COPY 
-OF FULL LICENCE FOR EACH) and a summary of the licensing information is
-provided below:
+Licences for each package are indicated with the release and a summary 
+of the licensing information is provided below:
 
 Netcdf, Hdf5, Netpbm, PCRE, Boost, Data models
 Licences vary a little in their wording (see full licenses for each 
