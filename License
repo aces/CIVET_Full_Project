@@ -50,38 +50,42 @@ using the Software commercially, please contact Alan C. Evans to
 negotiate a licence. Contact details are: alan.evans@mcgill.ca
 
 
-Software components		Copyright	
-civet                   Alan C. Evans	
+Software components     Copyright	
+civet                   Alan C. Evans, David MacDonald, Jason Lerch, Claude Lepage
 arguments               Alan C. Evans, Jonathan Harlap	
 bicpl                   Alan C. Evans, David MacDonald	
 classify                Alan C. Evans, Vasken Kollokian	
 conglomerate            Alan C. Evans, David MacDonald	
-cortex_area             Alan C. Evans	
-cortical_surface        Alan C. Evans	
+cortex_area             Alan C. Evans, Claude Lepage	
+cortical_surface        Alan C. Evans, David MacDonald
 ebtks                   Alan C. Evans, Alex Zijdenbos	
-Getopt-Tabular          Alan C. Evans, Greg Ward	
-ILT                     Alan C. Evans, David MacDonald	
+Getopt-Tabular          Alan C. Evans, Greg Ward
+ILT                     Alan C. Evans, David MacDonald
 inormalize              Alan C. Evans, Alex Zijdenbos
 minc                    Alan C. Evans, Peter Neelin, Dave MacDonald	
-mni_autoreg             Alan C. Evans, Louis Collins, Greg Ward	
+mni_autoreg             Alan C. Evans, Louis Collins, Greg Ward
 mni_m4                  Alan C. Evans, Jason Lerch
 mni_perllib             Alan C. Evans, Greg Ward
 N3                      Alan C. Evans, John Sled
 PMP                     Alan C. Evans, Jason Lerch
-pve                     Alan C. Evans
+pve                     Alan C. Evans, Jussi Tohka
 ray_trace               Alan C. Evans, David MacDonald, Jason Lerch
-surface-extraction      Alan C. Evans	
+surface-extraction      Alan C. Evans, David MacDonald, June Sik Kim
 
 
 Other packages included in the release:
 
 The aggregate Civet release includes the following packages: mincbet 
-(copyright: Alan C. Evans) & mni_surfreg (copyright: Alan C. Evans), 
-which are released under the terms of the GPLv2.0 licence 
-(http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), and oobicpl 
-(copyright: Alan C. Evans, Jason Lerch, Steve Robbins) and 
-laplacian_thickness (copyright: Alan C. Evans) which are released under
-the LGPLv2.1 licence 
+(copyright: Alan C. Evans, Claude Lepage, Andrew Janke) & mni_surfreg 
+(copyright: Alan C. Evans, Oliver Lyttelton, Steve Robbins, Maxime 
+Boucher), which are released under the terms of the GPLv2.0 licence 
+(http://www.gnu.org/licenses/old-licenses/gpl-2.0.html). Mincbet is a 
+minc adaptation of FSL bet version 1.0 by Stephen Smith (University of
+Oxford).
+The aggregate Civet release also includes the following packages: 
+oobicpl (copyright: Alan C. Evans, Jason Lerch, Steve Robbins) and 
+laplacian_thickness (copyright: Alan C. Evans, Jason Lerch) which are 
+released under the LGPLv2.1 licence 
 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html).
 
 The aggregate Civet release also includes the following external 
