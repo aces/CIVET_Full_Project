@@ -94,7 +94,14 @@ cp -p $PWD/install.sh $INSTALL_DIR/building/
 
 echo "#!/bin/sh -f" > job_test
 echo "source $INSTALL_RELATIVE_DIR/init.sh" >> job_test
-echo "$INSTALL_RELATIVE_DIR/CIVET-2.1.1/CIVET_Processing_Pipeline -prefix mni_icbm -sourcedir Test/ -targetdir Test/ -N3-distance 200 -lsq12 -resample-surfaces -thickness tlaplace:tfs:tlink 30:20 -VBM -combine-surface -spawn -run 00100" >> job_test
+
+# -animal -lobe-atlas icbm152nl-2009a
+ANIMAL_Opt=""
+if [ "$(ANIMAL)" == "YES" ] ; then
+    ANIMAL_Opt="-animal -lobe-atlas icbm152nl-2009a"
+fi
+
+echo "$INSTALL_RELATIVE_DIR/CIVET-2.1.1/CIVET_Processing_Pipeline -prefix mni_icbm -sourcedir Test/ -targetdir Test/ -N3-distance 200 -lsq12 -resample-surfaces -thickness tlaplace:tfs:tlink 30:20 -VBM $ANIMAL_Opt -combine-surface -spawn -run 00100" >> job_test
 chmod u+x job_test
 
 echo "Submit file job_test to run the test case"
