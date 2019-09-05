@@ -213,7 +213,8 @@ binaries:
 	@echo 
 	@echo "Packaging binaries for civet$(CIVET_VERS)-binaries.tar.gz..."
 	@echo 
-	tar cvf civet$(CIVET_VERS)-binaries.tar $(UNAME)/bin \
+	tar --exclude='$(UNAME)/share/hdf5_examples' \
+	        -cvf civet$(CIVET_VERS)-binaries.tar $(UNAME)/bin \
 	        $(UNAME)/CIVET$(CIVET_VERS) $(UNAME)/doc \
 	        $(UNAME)/etc $(UNAME)/lib $(UNAME)/perl \
 	        $(UNAME)/init.* $(UNAME)/share \
