@@ -178,9 +178,9 @@ included in the distribution is a set of C++ wrapper functions.
 THE BASIC LIBRARY FUNCTIONS
 ---------------------------
 
-Written by:       Philip Hazel
+Written by:Â  Â  Â  Â Philip Hazel
 Email local part: ph10
-Email domain:     cam.ac.uk
+Email domain:Â  Â  Â cam.ac.uk
 
 University of Cambridge Computing Service,
 Cambridge, England.
@@ -192,7 +192,7 @@ All rights reserved.
 THE C++ WRAPPER FUNCTIONS
 -------------------------
 
-Contributed by:   Google Inc.
+Contributed by:Â  Â Google Inc.
 
 Copyright (c) 2007-2008, Google Inc.
 All rights reserved.
@@ -231,8 +231,8 @@ Copyright (C) 1993-2009 Louis Collins, McConnell Brain Imaging Centre,
 Montreal Neurological Institute, McGill University.
 
 The authors and McGill University make no representations about the 
-suitability of this software for any purpose.  It is provided "as is" 
-without express or implied warranty.  The authors are not responsible 
+suitability of this software for any purpose.Â  It is provided "as is" 
+without express or implied warranty.Â  The authors are not responsible 
 for any data loss, equipment damage, property loss, or injury to 
 subjects or patients resulting from the use or misuse of this software 
 package.
