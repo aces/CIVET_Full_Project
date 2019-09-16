@@ -2,7 +2,7 @@
 
 ## Overview
 
-Before you continue, please make sure to review the license agreement: [CIVET Liscense](https://github.com/aces/CIVET_Full_Project/blob/master/License).
+Before you continue, please make sure to review the license agreement: [CIVET LICENSE](https://github.com/aces/CIVET_Full_Project/blob/master/LICENSE).
 
 If you are only interested in installing CIVET binaries only without the trouble of compiling 
 CIVET from sources, you can obtain binaries for some common systems on the [CIVET main page](http://www.bic.mni.mcgill.ca/ServicesSoftware/CIVET-2-1-0-Source-Code-Access-and-Binaries) 
