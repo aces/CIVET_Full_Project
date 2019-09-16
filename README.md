@@ -61,7 +61,42 @@ In this repo (CIVET_Full_Project), we include
 * Test folder (MINC image to test CIVET)
 * TGZ folder
 
+The install.sh and Makefile will automatically download all source code for the some acelab/BIC packages from GitHub. 
+Here is the list of acelab/BIC packages:
+* [arguments](https://github.com/aces/arguments) (forked from [BIC](https://github.com/BIC-MNI/arguments))
+* [bicpl](https://github.com/aces/bicpl) (forked from [BIC](https://github.com/BIC-MNI/bicpl))
+* [civet](https://github.com/aces/CIVET)
+* [classify](https://github.com/aces/classify) (forked from [BIC](https://github.com/BIC-MNI/classify))
+* [conglomerate](https://github.com/aces/conglomerate) (forked from [BIC](https://github.com/BIC-MNI/conglomerate))
+* [cortex_area](https://github.com/aces/cortex_area)
+* [cortical_surface](https://github.com/aces/cortical_surface)
+* [ebtks](https://github.com/aces/EBTKS) (forked from [BIC](https://github.com/BIC-MNI/EBTKS))
+* [Getopt-Tabular](https://github.com/aces/Getopt-Tabular)
+* [ILT](https://github.com/aces/ILT) (forked from [BIC](https://github.com/BIC-MNI/ILT))
+* [inormalize](https://github.com/aces/inormalize) (forked from [BIC](https://github.com/BIC-MNI/inormalize))
+* [laplacian_thickness](https://github.com/aces/laplacian_thickness)
+* [m4](https://github.com/aces/m4) (forked from [BIC](https://github.com/BIC-MNI/mni-acmacros))
+* [minc](https://github.com/aces/minc) (forked from [BIC](https://github.com/BIC-MNI/minc))
+* [mincbet](https://github.com/aces/mincbet)
+* [mni_autoreg](https://github.com/aces/mni_autoreg) (forked from [BIC](https://github.com/BIC-MNI/mni_autoreg))
+* [mni-models_adni](https://github.com/aces/mni-models_adni_nl)
+* [mni-models_average305-lin](https://github.com/aces/mni-models_average305-lin)
+* [mni-models_colin27-lin](https://github.com/aces/mni-models_colin27-lin)
+* [mni-models_icbm152-lin](https://github.com/aces/mni-models_icbm152-lin)
+* [mni-models_icbm152-nl](https://github.com/aces/mni-models_icbm152-nl)
+* [mni-modles_icbm152-nl-2009](https://github.com/aces/mni-models_icbm152-nl-2009)
+* [mni_perllib](https://github.com/aces/mni-perllib) (forked from [BIC](https://github.com/BIC-MNI/mni-perllib))
+* [mni_surfreg](https://github.com/aces/mni_surfreg)
+* [mni-templates](https://github.com/aces/mni-templates)
+* [N3](https://github.com/aces/N3) (forked from [BIC](https://github.com/BIC-MNI/N3))
+* [oobicpl](https://github.com/aces/oobicpl) (forked from [BIC](https://github.com/BIC-MNI/oobicpl))
+* [PMP](https://github.com/aces/PMP)
+* [pve](https://github.com/aces/pve)
+* [ray_trace](https://github.com/aces/ray_trace) (forked from [BIC](https://github.com/BIC-MNI/ray_trace))
+* [surface-extraction ](https://github.com/aces/surface-extraction)
+
 The TGZ folder contains external packages (.tar.gz) not developed at the acelab/BIC (like HDF5, netcdf, Boost, etc). These versions in TGZ have been tested with the current version of CIVET and they work. You should not replace them with newer versions without testing and validation.
+
 
 #### 4 - Select the appropriate CIVET version.
 
