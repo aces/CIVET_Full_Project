@@ -250,8 +250,6 @@ library filename or 'none' [libz.so] ==> libz.so
 
 ENTER for default option
 ```
-What is your Z (compression) library?
-library filename or 'none' [libz.so] ==> libz.so
 Where are the interface headers for it?
 Z header directory [default] ==> 
 ```
@@ -312,4 +310,9 @@ Just run in *your CIVET_Full_Project* folder.
 ```
 cd your_CIVET_Full_Project
 source Linux-x86_64/init.sh
+Linux-x86_64/CIVET-2.1.1/CIVET_Processing_Pipeline
 ```
+If you want to know more about the Usage of CIVET, please go to 
+[Basic Usage of CIVET](http://www.bic.mni.mcgill.ca/ServicesSoftware/CIVET-2-1-0-Basic-Usage-of-CIVET), 
+[Outputs of CIVET](http://www.bic.mni.mcgill.ca/ServicesSoftware/CIVET-2-1-0-Outputs-of-CIVET),
+[Quality Control](http://www.bic.mni.mcgill.ca/ServicesSoftware/CIVET-2-1-0-Quality-Control)
