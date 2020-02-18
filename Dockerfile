@@ -30,6 +30,7 @@ RUN ["bash", "install.sh"]
 # clean up build files to reduce image size
 WORKDIR /opt/CIVET/Linux-x86_64
 RUN ["rm", "-r", "SRC", "building", "info", "man"]
+RUN ["chmod", "--recursive", "u+rX,g+rX,o+rX", "/opt/CIVET" ]
 
 # multi-stage build
 FROM base
