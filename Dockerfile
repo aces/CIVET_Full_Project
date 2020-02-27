@@ -1,6 +1,6 @@
 FROM ubuntu:18.04 as base
 RUN ["apt-get", "update", "-qq"]
-RUN ["apt-get", "install", "-qq", "perl", "imagemagick", "gnuplot"]
+RUN ["apt-get", "install", "-qq", "perl", "imagemagick", "gnuplot", "locales"]
 
 FROM base as builder
 RUN ["apt-get", "install", "-qq", "git-lfs"]
