@@ -934,17 +934,21 @@ define make-untar-target
 	      cvs co -P -r ${$1_CVS_TAG} -d ${$1_DIR} ${$1_CVS} ; \
 	    else \
 	      if [ "$(USE_GIT)" == "yes" ] ; then \
-	        git lfs clone --recurse-submodules --branch ${$1_GIT_TAG} ${$1_GIT} ${$1_DIR}; \
-	        if [ ! -e ${$1_DIR}/.git ] ; then \
-	          echo "Fail to clone source codes from ${$1_GIT}"; \
-	          exit 1; \
-	        fi ; \
-	        cd ${$1_DIR}; \
-	        if [[ "`git describe --tags`" != "${$1_GIT_TAG}" ]] ; then \
-	          echo "Fail to checkout tag to ${$1_GIT_TAG}"; \
-	          exit 1; \
-	        fi ; \
-	        cd -; \
+          if [ -n "${$1_GIT}" ] ; then \
+            git lfs clone --recurse-submodules --branch ${$1_GIT_TAG} ${$1_GIT} ${$1_DIR}; \
+            if [ ! -e ${$1_DIR}/.git ] ; then \
+              echo "Fail to clone source codes from ${$1_GIT}"; \
+              exit 1; \
+            fi ; \
+            cd ${$1_DIR}; \
+            if [[ "`git describe --tags`" != "${$1_GIT_TAG}" ]] ; then \
+              echo "Fail to checkout tag to ${$1_GIT_TAG}"; \
+              exit 1; \
+            fi ; \
+            cd -; \
+          else \
+            echo "Warning: no git repo for $1" ; \
+          fi ; \
         else \
           echo "You need either USE_GIT=yes or USE_CVS=yes" ; \
           exit 1; \
