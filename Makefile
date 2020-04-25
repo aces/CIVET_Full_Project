@@ -945,6 +945,9 @@ define make-untar-target
 	          exit 1; \
 	        fi ; \
 	        cd -; \
+        else \
+          echo "You need either USE_GIT=yes or USE_CVS=yes" ; \
+          exit 1; \
 	      fi ; \
 	    fi ; \
 	  fi ; \
