@@ -15,6 +15,49 @@ At this point, the following versions are available:
 
 The compilation procedure is the same for all versions of CIVET.
 
+## Using CIVET in Docker
+
+The installation instructions described below to compile CIVET on bare-metal are long and platform-specific.
+The fastest way to get started is with Docker.
+
+An image for CIVET-2.1.1 is available on [Dockerhub](https://hub.docker.com/r/mcin/civet).
+
+```bash
+docker pull mcin/civet:2.1.1
+```
+
+### Usage
+
+```bash
+# input file is a T1-weighted image
+$ ls /folder
+scan_00100_t1.mnc
+
+# Run the full pipeline
+$ docker run -v /folder:/data mcin/civet:2.1.1 CIVET_Processing_Pipeline -prefix scan -sourcedir /data/ -targetdir /data/ -N3-distance 200 -lsq12 -resample-surfaces -thickness tlaplace:tfs:tlink 30:20 -VBM -combine-surface -spawn -run 00100
+
+# Use individual MINC tools
+$ docker run -v /folder:/data mcin/civet:2.1.1 mincinfo /data/scan_00100_t1.mnc
+file: /data/scan_00100_t1.mnc
+image: signed__ short 0 to 4095
+image dimensions: xspace zspace yspace
+dimension name         length         step        start
+--------------         ------         ----        -----
+xspace                    170            1      -82.551
+zspace                    256           -1      102.811
+yspace                    256           -1      161.156
+```
+
+
+
+### Build
+
+```
+git clone https://github.com/aces/CIVET_Full_Project.git
+cd CIVET_Full_Project
+docker build -t civet $PWD
+```
+
 ## Download CIVET from GitHub
 
 If you really wish to continue and compile CIVET from GitHub sources, you need follow the
