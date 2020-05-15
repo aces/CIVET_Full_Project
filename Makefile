@@ -1742,7 +1742,7 @@ surfreg       :  $(SURFREG)
 
 inits         :  ${ENV_FILES}
 
-untar         :  $(foreach element,$(LIST_TAR),$($(element)_UNTAR))
+untar         :  $(foreach element,$(LIST_ALL),$($(element)_UNTAR))
 utils         :  perllib getopt PMP ILT m4
 mnilibs       :  minc ebtks bicpl oobicpl
 models        :  adni avg305 colin27 icbm152 icbm152nl icbm152nl09
