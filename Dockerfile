@@ -1,7 +1,6 @@
 FROM ubuntu:18.04 as base
 RUN ["apt-get", "update", "-qq"]
-RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
-RUN ["apt-get", "install", "-qq", "--no-install-recommends", "perl", "imagemagick", "gnuplot-nox", "locales", "ttf-mscorefonts-installer"]
+RUN ["apt-get", "install", "-qq", "--no-install-recommends", "perl", "imagemagick", "gnuplot-nox", "locales", "gsfonts"]
 
 FROM base as builder
 RUN ["apt-get", "install", "-qq", "git-lfs"]
